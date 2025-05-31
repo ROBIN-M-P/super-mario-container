@@ -28,5 +28,15 @@ docker run -d -p 8080:80 sevenajay/mario
 3- Access the game via browser:
 Open:
 http://your-server-ip:8080
+**note**
+## ⚠️ Troubleshooting
+If the game isn't accessible, check:
+- Security group settings to allow inbound traffic on port 8080.
+- Container logs using:
+  ```bash
+  docker logs <container_id>
+
+  - Restart the container:
+docker restart <container_id>
 
 - 🎉 Huuurrrraaaayyyyyyyy! You did it! 🥳
